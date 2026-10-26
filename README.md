@@ -1,14 +1,3 @@
-This contains everything you need to run your app locally.
+TorqPool is a group-buying platform for retail and commercial vehicles and insurance, where buyers pool demand to get better deals. Dealers compete through reverse-auction bidding, and buyers commit with refundable escrow tokens. 
 
-View your app: https://torqpool-vehicle-insurance-group-buying-aggregato.ai.studio/
-
-## Run Locally
-
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+View app: https://torqpool-vehicle-insurance-group-buying-aggregato.ai.studio/
