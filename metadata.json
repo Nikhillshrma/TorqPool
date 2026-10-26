@@ -1,0 +1,6 @@
+{
+  "name": "TORQPOOL - Vehicle & Insurance Group Buying Aggregator",
+  "description": "High-conversion group-buying platform for retail and commercial vehicles and insurance pooling with reverse-auction dealer bidding and refundable escrow tokens.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

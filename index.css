@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    border-color: #262626;
+  }
+  body {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, 'Noto Sans', sans-serif;
+  }
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', 'Noto Sans', 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+/* Custom Cyber Yellow Accent Glows & Animations */
+.glow-yellow-sm {
+  box-shadow: 0 0 15px rgba(255, 204, 0, 0.25);
+}
+
+.glow-yellow-md {
+  box-shadow: 0 0 25px rgba(255, 204, 0, 0.35);
+}
+
+.glow-yellow-lg {
+  box-shadow: 0 0 40px rgba(255, 204, 0, 0.45);
+}
+
+.border-yellow-glow {
+  border-color: #FFCC00;
+  box-shadow: 0 0 15px rgba(255, 204, 0, 0.2);
+}
+
+/* Radar scan animation */
+@keyframes radar-sweep {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-radar-sweep {
+  animation: radar-sweep 4s linear infinite;
+}
+
+/* Marquee scrolling ticker */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 32s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Radar ping wave */
+@keyframes radar-pulse-wave {
+  0% {
+    transform: scale(0.2);
+    opacity: 0.9;
+  }
+  70% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
+.animate-radar-pulse {
+  animation: radar-pulse-wave 2.5s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
